@@ -91,4 +91,4 @@ spark.sql("""select count(distinct NU_INSCRICAO) AS CONT from TbEnem where TP_LO
 
 #Questão 15
 
-spark.sql("""select count(distinct NU_INSCRICAO),NO_MUNICIPIO_PROVA AS CONT from TbEnem GROUP BY NO_MUNICIPIO_PROVA ORDER BY 1 DESC""").show()
+spark.sql("""select count(distinct NU_INSCRICAO),NO_MUNICIPIO_ESC AS CONT from TbEnem GROUP BY NO_MUNICIPIO_ESC ORDER BY 1 DESC""").show()
